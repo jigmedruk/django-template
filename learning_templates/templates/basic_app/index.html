@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+  {% block content %}
+    <h1>Welcome to Index</h1>
+    <!-- <h2>This is index.html page shown</h2> -->
+    <h1>
+      {{text | upper}}
+      <p></p>
+      {{text|cut:'world'}}
+      <p></p>
+      {{number | add:"10"}}
+    </h1>
+  {% endblock %}
